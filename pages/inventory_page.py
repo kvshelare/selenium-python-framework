@@ -10,6 +10,10 @@ class InventoryPage(BasePage):
     CART = (By.ID, "shopping_cart_container")
     CART_BADGE = (By.CLASS_NAME, "shopping_cart_badge")
 
+    # Logout locators
+    MENU_BUTTON = (By.ID, "react-burger-menu-btn")
+    LOGOUT_LINK = (By.ID, "logout_sidebar_link")
+
     def __init__(self, driver):
         super().__init__(driver)
 
@@ -27,3 +31,7 @@ class InventoryPage(BasePage):
 
     def get_cart_count(self):
         return self.get_text(self.CART_BADGE)
+
+    def logout(self):
+        self.click(self.MENU_BUTTON)
+        self.click(self.LOGOUT_LINK)

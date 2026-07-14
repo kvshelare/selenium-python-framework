@@ -26,9 +26,11 @@ class LoginPage(BasePage):
         self.enter_username(username)
         self.enter_password(password)
         self.click_login()
-
     def get_products_title(self):
         return self.get_text(self.PRODUCTS_TITLE)
 
     def get_error_message(self):
         return self.get_text(self.ERROR_MESSAGE)
+
+    def get_login_button(self):
+        return self.driver.find_element(*self.LOGIN_BUTTON)
