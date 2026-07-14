@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Pytest
+.pytest_cache/
+
+# VS Code
+.vscode/
+
+# Reports
+reports/
+
+# Screenshots
+screenshots/
+
+# Logs
+logs/
+
+# Virtual Environment
+venv/
+.env/
+
+# OS Files
+.DS_Store
+Thumbs.db
