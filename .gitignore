@@ -25,3 +25,6 @@ venv/
 # OS Files
 .DS_Store
 Thumbs.db
+logs/*.log
+reports/
+screenshots/
